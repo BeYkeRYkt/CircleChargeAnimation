@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CircleChargeAnimation</string>
+    <string name="xposedDescription">Enable circle charge animation for CM 13</string>
+</resources>
