@@ -25,7 +25,7 @@ public class XposedMod implements IXposedHookLoadPackage {
                 ViewGroup statusView = (ViewGroup) getObjectField(param.thisObject, "mStatusBarView");
                 int containerId = statusView.getResources().getIdentifier("battery", "id", "com.android.systemui");
                 Object batteryView = statusView.findViewById(containerId);
-                if(!getBooleanField(batteryView, "mAnimationsEnabled")) {
+                if (!getBooleanField(batteryView, "mAnimationsEnabled")) {
                     callMethod(batteryView, "setAnimationsEnabled", true);
                 }
             }
